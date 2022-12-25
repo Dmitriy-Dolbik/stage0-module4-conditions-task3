@@ -3,16 +3,20 @@ package school.mjc.stage0.conditions.task3;
 public class Seasons {
     public static void main(String[] args) {
         Seasons seasons = new Seasons();
-        seasons.tellTheSeasonByMonthNumber(-1);
+        seasons.tellTheSeasonByMonthNumber(-12);
     }
-    public void tellTheSeasonByMonthNumber(int month) {
-        switch (month){
-            case 12,1,2 -> System.out.println("Winter");
-            case 3,4,5 -> System.out.println("Spring");
-            case 6,7,8 -> System.out.println("Summer");
-            case 9,10,11 -> System.out.println("Autumn");
-            default -> System.out.println("wrong number!");
-        }
 
+    public void tellTheSeasonByMonthNumber(int month) {
+        if (month == 12 || month == 1 || month == 2) {
+            System.out.println("Winter");
+        } else if (month == 3 || month == 4 || month == 5) {
+            System.out.println("Spring");
+        } else if (month == 6 || month == 7 || month == 8) {
+            System.out.println("Summer");
+        } else if (month == 9 || month == 10 || month == 11) {
+            System.out.println("Autumn");
+        } else {
+            System.out.println("wrong number!");
+        }
     }
 }

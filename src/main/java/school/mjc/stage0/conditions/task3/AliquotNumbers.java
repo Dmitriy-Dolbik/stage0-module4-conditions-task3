@@ -3,7 +3,7 @@ package school.mjc.stage0.conditions.task3;
 public class AliquotNumbers {
     public static void main(String[] args) {
         AliquotNumbers an = new AliquotNumbers();
-        an.isFirstAliquot(12, 16);
+        an.isFirstAliquot(6, 6);
     }
     public void isFirstAliquot(int first, int second) {
         int sumOfDivisors = 0;
@@ -12,7 +12,6 @@ public class AliquotNumbers {
                 sumOfDivisors += i;
             }
         }
-        System.out.println(sumOfDivisors);
         if (second==sumOfDivisors){
             System.out.println("Aliquot");
         } else {
