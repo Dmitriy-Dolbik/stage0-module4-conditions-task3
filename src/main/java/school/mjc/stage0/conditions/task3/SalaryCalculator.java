@@ -1,8 +1,5 @@
 package school.mjc.stage0.conditions.task3;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class SalaryCalculator {
     public static void main(String[] args) {
         SalaryCalculator salaryCalculator = new SalaryCalculator();
